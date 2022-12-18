@@ -1,0 +1,61 @@
+{
+  "name": "@kacy-luker/react-library",
+  "version": "0.0.2",
+  "type": "module",
+  "description": "Kacy Luker's React component library",
+  "author": "Kacy Luker",
+  "license": "ISC",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kacy-luker/react-library.git"
+  },
+  "types": "dist/index.d.ts",
+    "publishConfig": {
+    "registry": "https://npm.pkg.github.com/kacy-luker"
+  },
+  "files": [
+    "dist"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "rollup": "rollup -c"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.10",
+    "@types/react-dom": "^18.0.9",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.2.0",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/react": "^18.0.26",
+    "jest-environment-jsdom": "^29.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.7.5",
+    "rollup-plugin-dts": "^5.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
